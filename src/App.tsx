@@ -26,8 +26,14 @@ function App() {
         iconLeft={<CloseIcon />}
         variant={"outlined"}
       >
-        Both Icons
+        Both Sides Icons
       </Button>
+      <br />
+      <div>
+        <Button size={"small"}>Small</Button>
+        <Button>Medium</Button>
+        <Button size={"large"}>Large</Button>
+      </div>
     </div>
   );
 }
