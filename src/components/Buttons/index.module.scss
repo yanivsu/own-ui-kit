@@ -19,6 +19,19 @@
     transform: scale(0.98);
     box-shadow: rgba(0, 0, 0, 0.2) 0rem 0.1rem 0.3rem inset;
   }
+  &.small {
+    height: 30px;
+    max-height: 30px;
+    padding: $spacing-unit * 0.5 $spacing-unit;
+    font-size: 0.75rem;
+  }
+
+  &.large {
+    height: 50px;
+    max-height: 50px;
+    padding: $spacing-unit * 1.25 $spacing-unit * 2.5;
+    font-size: 1rem;
+  }
 }
 
 .outlined {

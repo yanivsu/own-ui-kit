@@ -9,6 +9,7 @@ interface ButtonProps {
   iconRight?: React.ReactNode;
   iconLeft?: React.ReactNode;
   disabled?: boolean;
+  size?: "small" | "medium" | "large";
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -18,11 +19,15 @@ export const Button: React.FC<ButtonProps> = ({
   iconRight,
   iconLeft,
   disabled = false,
+  size = "medium",
 }) => {
   const className = cl(styles.button, {
     [styles.outlined]: variant === "outlined",
     [styles.text]: variant === "text",
     [styles.disabled]: disabled,
+    [styles.small]: size === "small",
+    [styles.medium]: size === "medium",
+    [styles.large]: size === "large",
   });
 
   return (
