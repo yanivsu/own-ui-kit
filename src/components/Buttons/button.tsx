@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 interface ButtonProps {
   onClick?: () => void;
   children: React.ReactNode;
-  variant?: "default" | "outlined";
+  variant?: "default" | "outlined" | "text";
   iconRight?: React.ReactNode;
   iconLeft?: React.ReactNode;
 }
@@ -16,7 +16,12 @@ export const Button: React.FC<ButtonProps> = ({
   iconRight,
   iconLeft,
 }) => {
-  const className = variant === "outlined" ? styles.outlined : styles.button;
+  const className =
+    variant === "outlined"
+      ? styles.outlined
+      : variant === "text"
+      ? styles.text
+      : styles.button;
 
   return (
     <button className={className} onClick={onClick}>

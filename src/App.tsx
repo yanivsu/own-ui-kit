@@ -12,6 +12,8 @@ function App() {
       <br />
       <Button variant="outlined">Outlined Button</Button>
       <br />
+      <Button variant="text">Text Button</Button>
+      <br />
       <h1>Button With Icon:</h1>
       <Button iconRight={<CheckIcon />}>Right Icon</Button>
       <br />
