@@ -14,6 +14,8 @@ function App() {
       <br />
       <Button variant="text">Text Button</Button>
       <br />
+      <Button disabled={true}>Disabled Button</Button>
+      <br />
       <h1>Button With Icon:</h1>
       <Button iconRight={<CheckIcon />}>Right Icon</Button>
       <br />

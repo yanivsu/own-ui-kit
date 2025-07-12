@@ -61,6 +61,11 @@
   }
 }
 
+.disabled {
+  pointer-events: none;
+  background-color: $color-grey;
+}
+
 .content {
   display: inline-flex;
   align-items: center;
